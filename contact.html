@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Our Shoulders Foundation</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <a href="#main-content" class="visually-hidden">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-container" aria-label="Our Shoulders Foundation Home">
+        <img src="Our Shoulders Logo.png" alt="Our Shoulders Foundation Logo">
+      </a>
+      <nav aria-label="Main Navigation">
+        <div class="nav-links" id="nav-links">
+          <a href="about.html" class="nav-link">About</a>
+          <a href="index.html#what-we-do" class="nav-link">What We Do</a>
+          <a href="volunteer.html" class="nav-link">Volunteer</a>
+          <a href="donate.html" class="nav-link">Donate</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </nav>
+      <div style="display: flex; align-items: center; gap: var(--space-4);">
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-label="Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main-content">
+
+      <section class="page-hero reveal">
+        <div class="container hero-content">
+          <h1>Reach Out</h1>
+          <p>We'd Love to Hear from You</p>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="container grid-2">
+          <div>
+            <span class="section-label">Connect</span>
+            <h2 class="mb-8">Get in Touch</h2>
+            <div class="mb-8">
+              <h4 style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;"><i data-lucide="map-pin" style="color: var(--color-primary);"></i> Address</h4>
+              <p>13, 8th Street, Samayapuram,<br>Karambakkam-Porur,<br>Chennai &ndash; 600 116</p>
+            </div>
+            
+            <div class="mb-8">
+              <h4 style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;"><i data-lucide="phone" style="color: var(--color-primary);"></i> Phone</h4>
+              <p>+91 7373118000<br>+91 9444334487</p>
+            </div>
+            
+            <div class="mb-8">
+              <h4 style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;"><i data-lucide="mail" style="color: var(--color-primary);"></i> Email</h4>
+              <p>ourshoulder@gmail.com</p>
+            </div>
+
+            <div style="border-radius: 10px; overflow: hidden; height: 300px; background-color: var(--color-surface-offset); border: 1px solid var(--color-border);">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.852445695576!2d80.15878411534063!3d13.044458990808204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52611a1961dc2d%3A0xcda6b0d91244e69b!2sPorur%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1625567843729!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+          
+          <div>
+            <div class="card">
+              <h2 class="mb-6">Send a Message</h2>
+              <form id="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="name" class="form-label">Name*</label>
+                  <input type="text" id="name" name="name" class="form-input" required>
+                  <div class="form-error">Please enter your name.</div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="email" class="form-label">Email*</label>
+                  <input type="email" id="email" name="email" class="form-input" required>
+                  <div class="form-error">Please enter a valid email address.</div>
+                </div>
+                
+                <div class="grid-2" style="gap: var(--space-4);">
+                  <div class="form-group">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" id="phone" name="phone" class="form-input">
+                  </div>
+                  <div class="form-group">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" id="subject" name="subject" class="form-input">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="address" class="form-label">Address</label>
+                  <input type="text" id="address" name="address" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                  <label for="message" class="form-label">Message*</label>
+                  <textarea id="message" name="message" class="form-input" required></textarea>
+                  <div class="form-error">Please enter a message.</div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Message</button>
+                <div id="form-success" class="success-message"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-container footer-logo">
+            <img src="Our Shoulders Logo.png" alt="Our Shoulders Foundation Logo">
+          </a>
+          <p style="color: rgba(255,255,255,0.7); margin-top: var(--space-2);">Shouldering Responsibilities</p>
+          <div style="display: flex; gap: var(--space-4); margin-top: var(--space-4);">
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook" style="color: white; width: 20px;"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="color: white; width: 20px;"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="color: white; width: 20px;"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" style="color: white; width: 20px;"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="index.html#what-we-do" class="footer-link">What We Do</a></li>
+            <li><a href="volunteer.html" class="footer-link">Volunteering</a></li>
+            <li><a href="donate.html" class="footer-link">Donate</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Programs</h4>
+          <ul class="footer-links">
+            <li><a href="technical-training.html" class="footer-link">Technical Training</a></li>
+            <li><a href="vocational.html" class="footer-link">Vocational Training</a></li>
+            <li><a href="community.html" class="footer-link">Community Development</a></li>
+            <li><a href="health-sanitation.html" class="footer-link">Health & Sanitation</a></li>
+            <li><a href="environment.html" class="footer-link">Environment</a></li>
+            <li><a href="farmers.html" class="footer-link">Farmers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact & Legal</h4>
+          <ul class="footer-links" style="color: rgba(255,255,255,0.7); font-size: var(--text-sm);">
+            <li style="margin-bottom: var(--space-2);"><i data-lucide="map-pin" style="width: 16px; height: 16px; display: inline; margin-right: 4px; vertical-align:-3px;"></i> 13, 8th Street, Samayapuram, Karambakkam-Porur, Chennai &ndash; 600 116</li>
+            <li style="margin-bottom: var(--space-2);"><i data-lucide="phone" style="width: 16px; height: 16px; display: inline; margin-right: 4px; vertical-align:-3px;"></i> +91 7373118000 &middot; +91 9444334487</li>
+            <li style="margin-bottom: var(--space-2);"><i data-lucide="mail" style="width: 16px; height: 16px; display: inline; margin-right: 4px; vertical-align:-3px;"></i> ourshoulder@gmail.com</li>
+            <li style="margin-top: var(--space-4);">Reg. No. 1/2016/BK4</li>
+            <li>Sec. 12A &middot; CSR-1 &middot; Sec. 80G</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p>&copy; 2025 Our Shoulders Foundation. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
